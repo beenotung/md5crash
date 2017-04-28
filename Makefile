@@ -12,9 +12,6 @@ OBJ = $(patsubst $(SRCDIR)/%.c,$(BUILDDIR)/%.o,$(SRC))
 all: dir $(BUILDDIR)/$(EXE)
 
 dir:
-	echo "EXE: ${EXE}"
-	echo "SRC: ${SRC}"
-	echo "OBJ: ${OBJ}"
 	mkdir -p $(BUILDDIR)
 
 $(BUILDDIR)/$(EXE): $(OBJ)
