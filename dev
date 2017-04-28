@@ -1,2 +1,2 @@
 #!/bin/bash
-make && build/md5crash
+make && build/md5crash 424d640bf87ff260f9b263503fc78990
