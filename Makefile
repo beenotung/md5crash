@@ -9,9 +9,9 @@ SRC = $(wildcard $(SRCDIR)/*.c)
 OBJ = $(patsubst $(SRCDIR)/%.c,$(BUILDDIR)/%.o,$(SRC))
 
 
-all: dir $(BUILDDIR)/$(EXE)
+all: $(BUILDDIR) $(BUILDDIR)/$(EXE)
 
-dir:
+$(BUILDDIR):
 	mkdir -p $(BUILDDIR)
 
 $(BUILDDIR)/$(EXE): $(OBJ)
@@ -22,3 +22,4 @@ $(OBJ): $(BUILDDIR)/%.o : $(SRCDIR)/%.c
 
 clean:
 	rm -f $(BUILDDIR)/*.o $(BUILDDIR)/$(EXE)
+	find -type d -empty -name $(BUILDDIR) -delete
