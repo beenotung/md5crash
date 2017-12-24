@@ -1,6 +1,8 @@
 # md5crash
 a weekend practise
 
+This project is moved to https://github.com/beenotung/hash_finder, leaving here to reference on the Makefile later projects.
+
 ## Goal
 to 'crack' the md5 hashed message of `424d640bf87ff260f9b263503fc78990`
 
